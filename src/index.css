@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=Playpen+Sans:wght@300;400;500;600;700&family=Roboto+Slab:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+}
+
+@layer components {
+  .active-search {
+    @apply border-2 border-white;
+  }
+
+  .inactive-search {
+    @apply border-none;
+  }
+}
