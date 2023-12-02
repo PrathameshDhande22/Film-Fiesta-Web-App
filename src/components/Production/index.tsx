@@ -38,11 +38,10 @@ const Production = ({ data }: ProductionProps) => {
                     : "md:w-28 w-14 md:p-3 p-1 rounded-md"
                 }`}
               />
-              <div className="flex flex-col justify-center items-center font-robonto">
+              <div className="flex flex-col font-robonto">
                 <span className="block text-sm md:text-base">{value.name}</span>
                 <span className="md:text-sm text-gray-400 font-lora text-xs">
                   {lookup.byFips(value.origin_country)?.country}
-                  <span></span>
                 </span>
               </div>
             </div>
